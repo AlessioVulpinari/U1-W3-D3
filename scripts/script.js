@@ -37,7 +37,8 @@ const handleClickElementList = (event) => {
   if (event.target.style.textDecoration !== "line-through") {
     strikeText = event.target.style.textDecoration = "line-through"
     text = strikeText
-    console.log("entrato")
+  } else {
+    text = event.target.style.textDecoration = "none"
   }
 }
 
